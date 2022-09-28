@@ -2,75 +2,190 @@
 <html lang="en">
 
 <head>
-  <title>Insects with Letters</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+    <title>Insects with Letters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>Insects by Konda Shivaradhan</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2">
-        K
-      </div>
-      <div class="col-sm-2">
-        O
-      </div>
-      <div class="col-sm-2">N</div>
-      <div class="col-sm-2">D</div>
-      <div class="col-sm-2">A</div>
-      <div class="col-sm-2">S</div>
+    <nav class="navbar navbar-expand-md navbar-light and bg-light">
+        <a href="/insects.html" class="navbar-brand">Interesting Insects</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a href="basic.html" class="nav-link active">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a href="advanced.html" class="nav-link">Advacned</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <h1>Insects by Konda Shivaradhan</h1>
+    <div class=" container ">
+        <div class="row ">
+
+            <div class="col-sm-2 ">
+                O
+            </div>
+            <div class="col-sm-2 ">N</div>
+            <div class="col-sm-2 ">D</div>
+            <div class="col-sm-2 ">A</div>
+            <div class="col-sm-2 ">S</div>
+        </div>
+        <div class="row ">
+            <div class="col-md ">
+                Katydid
+            </div>
+            <div class="col-md ">Orthoptera</div>
+            <div class="col-md ">Nymph</div>
+            <div class="col-md ">Damselfly</div>
+            <div class="col-md ">Aphid</div>
+            <div class="col-md ">Swallowtailx</div>
+        </div>
+
+        <div class="explanation ">
+            <p>
+                <h4>Observation</h4>
+                <p> At the beging with window size maxed out, Both letters and insects divs are arranged horizontally, As size of the window is gradually reduced at one point div with insets rearranged to horizontally, further reducing the size the letters
+                    Div also rearranged horizontally.</p>
+                <h4>Explantion</h4>
+                As the letters divs classes are given as col-sm-2, means bootstrap grid of 12 will be divided to 6 parts with 2 blocks of each div. col-sm-'n' means small devices - screen width equal to or greater than 576px.
+                <br> The divs classes with insects names are given with col-md-'n' which stands for column medium ≥ 992px. Here we havt given any number after col-md. here bootstrap calculates it as 2 means col-md-2 because their are 6 col-md in a row
+                means 12/6=2. There fore, letters divs with class col-sm-2 rearranged after screensize reduced more than
+            </p>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-md">
-        Katydid
-      </div>
-      <div class="col-md">Orthoptera</div>
-      <div class="col-md">Nymph</div>
-      <div class="col-md">Damselfly</div>
-      <div class="col-md">Aphid</div>
-      <div class="col-md">Swallowtailx</div>
-    </div>
-    <div class="container">
-      <img src="/img/k.jpg" height="300px" width="300px" class="img-fluid" alt="">
-      <img src="/img/O.jpg" height="300px" width="300px" class="img-fluid" alt="">
-      <img src="/img/N.jpg" height="300px" width="300px" class="img-fluid" alt="">
+    <div class="container ">
+        <img src="/img/k.jpg " height="300px " width="300px " class="img-fluid " alt=" ">
+        <img src="/img/O.jpg " height="300px " width="300px " class="img-fluid " alt=" ">
+        <img src="/img/N.jpg " height="300px " width="300px " class="img-fluid " alt=" ">
 
     </div>
-    <div class="container">
-      <img src="/img/k.jpg" alt="" height="300px" width="300px" class="img-fluid">
-      <img src="/img/O.jpg" height="300px" width="300px" class="img-thumbnail" alt="">
-      <img src="/img/N.jpg" height="300px" width="300px" class="img-thumbnail" alt="">
+    <div class="container ">
+        <img src="/img/k.jpg " alt=" " height="300px " width="300px " class="img-fluid ">
+        <img src="/img/O.jpg " height="300px " width="300px " class="img-thumbnail " alt=" ">
+        <img src="/img/N.jpg " height="300px " width="300px " class="img-thumbnail " alt=" ">
     </div>
-    <div class="explanation">
-      <p>
-      <h4>Observation</h4>
-      <p> At the beging with window size maxed out, Both letters and insects divs are arranged horizontally,
-        As size of the window is gradually reduced at one point div with insets rearranged to horizontally,
-        further reducing the size the letters Div also rearranged horizontally.</p>
-      <h4>Explantion</h4>
-      As the letters divs classes are given as col-sm-2, means bootstrap grid of 12 will be divided to 6 parts with 2
-      blocks of
-      each div. col-sm-'n' means small devices - screen width equal to or greater than 576px.
-      <br>
-      The divs classes with insects names are given with col-md-'n' which stands for column medium ≥ 992px. Here we havt
-      given any number after col-md. here bootstrap calculates it as 2 means col-md-2 because their are 6 col-md in a
-      row means 12/6=2.
-      There fore, letters divs with class col-sm-2 rearranged after screensize reduced more than
-      </p>
-    </div>
-  </div>
+    <br>
+    <style>
+        table {
+            text-align: center;
+        }
+        
+        th {
+            color: rgb(255, 234, 0);
+        }
+        
+        #bold {
+            font-weight: bolder;
+        }
+    </style>
+    <table class="table table-dark table-striped ">
+        <caption>This table shows insects and their locations with respective letters</caption>
+        <thead>
+            <tr>
+                <th>Letter</th>
+                <th>Insect</th>
+                <th>City</th>
+                <th>River</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="bold " scope="col ">K</td>
+                <td scope="col ">Katydid</td>
+                <td scope="col ">Oklahoma</td>
+                <td scope="col ">Kiamichi</td>
+            </tr>
+            <tr>
+                <td id="bold ">O</td>
+                <td>Orthoptera</td>
+                <td>ohio</td>
+                <td>Ohio Creek</td>
+            </tr>
+            <tr>
+                <td id="bold ">N</td>
+                <td>Nymph</td>
+                <td>New Hampshire</td>
+                <td>Nashua</td>
+            </tr>
+            <tr>
+                <td id="bold ">D</td>
+                <td>Damselfly</td>
+                <td>Durham</td>
+                <td>Dhoriya</td>
 
+            </tr>
+            <tr>
+                <td id="bold ">A</td>
+                <td>Aphid</td>
+                <td>Alabama</td>
+                <td>Alabama River</td>
+            </tr>
+            <tr>
+                <td id="bold ">S</td>
+                <td>Swallowtailx</td>
+                <td>South Carolina</td>
+                <td>Salkehatchie River</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn-group " role="group ">
+        <button class="btn btn-success ">K</button>
+        <button class="btn btn-success ">O</button>
+        <button class="btn btn-success ">N</button>
+    </div>
+    <div class="btn-group " role="group ">
+        <button type="button " class="btn btn-warning ">D</button>
+        <button type="button " class="btn btn-warning ">A</button>
+    </div>
+    <div class="btn-group " role="group ">
+        <button class="btn btn-danger ">S  </button>
+    </div>
+    <div class="dropdown ">
+        <button class="btn btn-info dropdown-toggle " type="button " data-bs-toggle="dropdown "> Dropdown button </button>
+        <div class="dropdown-menu ">
+            <a class="dropdown-item " href="basic.html ">Basic</a>
+            <a class="dropdown-item " href="advanced.html ">Advanced</a>
+        </div>
+    </div>
+    <br>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Enter your Insect</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="img/k.jpg" class="card-img-top" alt="k insect">
+            <div class="card-body">
+                <h5 class="card-title">Katydid</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
